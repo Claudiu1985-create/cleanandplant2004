@@ -1,53 +1,120 @@
+/* GENERAL */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5fff5;
-    color: #333;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6f4e6;
+  color: #333;
+  line-height: 1.6;
 }
+
+h1, h2 {
+  color: #2e7d32;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #2e7d32;
+}
+
+a:hover {
+  color: #1b5e20;
+}
+
+/* HEADER & NAV */
 header {
-    background: #2e7d32;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #a5d6a7;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #81c784;
 }
+
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
 }
+
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  font-weight: bold;
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+
+/* MAIN SECTIONS */
 main {
-    padding: 20px;
+  padding: 30px 15px;
+  max-width: 1000px;
+  margin: auto;
 }
+
+section {
+  margin-bottom: 50px;
+}
+
+/* SERVICES LIST */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* GALLERY */
 .gallery {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
 .gallery img {
-    width: 30%;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
-form input, form textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
-form button {
-    background-color: #388e3c;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
 }
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* FOOTER */
 footer {
-    background: #1b5e20;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 40px;
 }
